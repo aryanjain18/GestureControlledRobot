@@ -41,24 +41,24 @@ void loop() {
 
   // Check for movement in the X-axis
   if (x_axis >= 40) {
-    Serial.println("Forward");
+    Serial.println("F");
   } 
   else if (x_axis <= -40) {
-    Serial.println("Backward");
+    Serial.println("B");
     
   }
 
   // Check for movement in the Y-axis
   else if (y_axis >= 40) {
-    Serial.println("Left");
+    Serial.println("L");
   } 
   else if (y_axis <= -40) {
-    Serial.println("Right");
+    Serial.println("R");
   }
   
   // No significant movement
   else {
-    Serial.println("Still");
+    Serial.println("S");
     // Add Bluetooth code to send "S" for still over Bluetooth
   }
 
